@@ -28,7 +28,7 @@ class Cube:
                 rotation = pygeo.multiply_m(r, rotation)
 
             point_2d = pygeo.multiply_m(pygeo.projection_matrix, rotation)
-
+        
             x = (point_2d[0][0] * scale) + pygeo.res[0] / 2
             y = (point_2d[1][0] * scale) + pygeo.res[1] / 2
 
